@@ -6,7 +6,7 @@ const fs = require('fs')
 // 上传目录
 const uploadFile = path.join(__dirname, '../uploadFile')
 const lastNameDir = path.join(__dirname, '../lastName')
-const lastNameFile = lastNameDir + '/index.js'
+const lastNameFile = lastNameDir + '/index.json'
 
 let storage = multer.diskStorage({
     destination (req, file, cb) {
